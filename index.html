@@ -30,5 +30,21 @@
 
     <input type="radio" name="theme" id="light" onclick="lightTheme()">
     <label for="light">Light</label><br>
+
+    <script>
+        function darkTheme(){
+            const theme=document.getElementById("main");
+            theme.classList.add('bg-dark');
+
+            theme.classList.remove('bg-light');
+        }
+
+        function lightTheme(){
+            const theme=document.getElementById("main");
+            theme.classList.add('bg-light');
+
+            theme.classList.remove('bg-dark');
+        }
+    </script>
 </body>
 </html>
